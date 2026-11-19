@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1F2E24" />
+  <meta name="description" content="Musicon Collective – leg, skab, del og mød i et kreativt fællesskab." />
+  <title>Musicon Collective | Leg · Skab · Del · Mød</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="manifest" href="manifest.json"> <!----->
+
+  <link rel="apple-touch-icon" href="images/icon-192.png"> <!---->
+<script>
+            // Check that service workers are registered
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./service-worker.js');
+                });
+            }
+    </script>
+
+     <script src="app.js" defer></script>
+  
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hjem" class="brand" aria-label="Musicon Collective, gå til forsiden">
+        <svg class="brand-mark" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+          <rect x="2" y="21" width="6" height="14" rx="3" />
+          <rect x="11" y="14" width="6" height="28" rx="3" />
+          <rect x="20" y="5" width="6" height="46" rx="3" />
+          <rect x="29" y="16" width="6" height="24" rx="3" />
+          <rect x="38" y="11" width="6" height="34" rx="3" />
+          <rect x="47" y="22" width="6" height="12" rx="3" />
+        </svg>
+        <span>Musicon<br />Collective</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false"
+        aria-label="Åbn menu">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Hovednavigation">
+        <a class="nav-link active" href="#hjem">Hjem</a>
+        <a class="nav-link" href="#aktiviteter">Aktiviteter</a>
+        <a class="nav-link" href="#lokaler">Lokaler & Booking</a>
+        <a class="nav-link" href="#sharebox">ShareBox</a>
+        <a class="nav-link" href="#om-os">Om os</a>
+        <a class="nav-link" href="#kontakt">Kontakt</a>
+        <a class="nav-link" href="3dmodel.html">3D</a>
+        <button class="btn btn-copper nav-book" data-open-booking>Book nu <span aria-hidden="true">↗</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero image-slot" id="hjem" style="--photo:url('images/hero.jpg')" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <span class="eyebrow light">ET KREATIVT MØDESTED I ROSKILDE</span>
+        <h1 id="hero-title">Musicon<br />Collective</h1>
+        <p class="hero-slogan">Leg <b>·</b> Skab <b>·</b> Del <b>·</b> Mød</p>
+        <p class="hero-description">Et kreativt og bæredygtigt fællesskab i hjertet af Musicon – for alle aldre.</p>
+        <div class="hero-actions"><a class="btn btn-copper" href="#oplev">Udforsk området <span
+              aria-hidden="true">→</span></a><button class="btn btn-outline-light" data-open-booking>▦ &nbsp; Book
+            lokale</button></div>
+      </div>
+      <div class="hero-curve" aria-hidden="true"></div>
+    </section>
+
+    <section class="quick-features" aria-label="Vores tilbud">
+      <div class="container feature-grid">
+        <a href="#aktiviteter" class="feature"><span class="feature-icon">♫</span>
+          <h3>Kreative aktiviteter</h3>
+          <p>Musik, kunst og workshops</p>
+        </a>
+        <a href="#lokaler" class="feature"><span class="feature-icon">♧</span>
+          <h3>Fælleslokaler</h3>
+          <p>Book rum til dine idéer</p>
+        </a>
+        <a href="#sharebox" class="feature"><span class="feature-icon">⚒</span>
+          <h3>ShareBox</h3>
+          <p>Lån værktøj – del ressourcer</p>
+        </a>
+        <a href="#om-os" class="feature"><span class="feature-icon">♧</span>
+          <h3>Bæredygtigt</h3>
+          <p>Genbrug, grøn energi og fællesskab</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="oplev">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">OPLEV OMRÅDET</span>
+            <h2>Oplev Musicon Collective</h2>
+            <div class="heading-rule"></div>
+          </div>
+          <p></p>
+        </div>
+        <div class="experience-grid">
+          <a class="experience-card image-slot" href="#legeplads" style="--photo:url('images/legepladsen.png')"><span
+              class="image-placeholder">Billede: legeplads.jpg</span><span class="card-overlay"><span>♫ &nbsp;
+                Legepladsen</span><span>→</span></span></a>
+          <a class="experience-card image-slot" href="#lokaler" style="--photo:url('images/lokale.png')"><span
+              class="image-placeholder">Billede: lokaler.jpg</span><span class="card-overlay"><span>▣ &nbsp; Lokaler &
+                Booking</span><span>→</span></span></a>
+          <a class="experience-card image-slot" href="#sharebox" style="--photo:url('images/sharebox1.jpg')"><span
+              class="image-placeholder">Billede: sharebox.jpg</span><span class="card-overlay"><span>⚒ &nbsp;
+                ShareBox</span><span>→</span></span></a>
+          <a class="experience-card image-slot" href="#aktiviteter"
+            style="--photo:url('images/arrengementer.jpg')"><span class="image-placeholder">Billede:
+              arrangementer.jpg</span><span class="card-overlay"><span>✦ &nbsp;
+                Arrangementer</span><span>→</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-green" id="aktiviteter">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><span class="eyebrow light">DET SKER HOS OS</span>
+            <h2>Arrangementer</h2>
+          </div>
+          <p>Oplev koncerter, workshops og fællesaktiviteter.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filtrer arrangementer"><button class="filter active"
+            data-filter="alle">Alle</button><button class="filter" data-filter="musik">Musik</button><button
+            class="filter" data-filter="workshop">Workshop</button><button class="filter"
+            data-filter="fællesskab">Fællesskab</button></div>
+        <div class="event-grid" id="eventGrid">
+          <article class="event-card" data-category="musik">
+            <div class="event-photo image-slot" style="--photo:url('images/event-musik.jpg')"><span
+                class="image-placeholder">event-musik.jpg</span><span class="date-pill">23 <small>NOV</small></span>
+            </div>
+            <div class="event-body">
+              <div>
+                <h3>Akustisk aften</h3>
+                <p>Kl. 19.00 – 22.00</p>
+              </div><button class="round-arrow" data-event="Akustisk aften"
+                aria-label="Læs om Akustisk aften">→</button>
+            </div>
+          </article>
+          <article class="event-card" data-category="workshop">
+            <div class="event-photo image-slot" style="--photo:url('images/lokale.png')"><span
+                class="image-placeholder">event-workshop.jpg</span><span class="date-pill">27 <small>NOV</small></span>
+            </div>
+            <div class="event-body">
+              <div>
+                <h3>Kreativ workshop</h3>
+                <p>Kl. 16.00 – 18.00</p>
+              </div><button class="round-arrow" data-event="Kreativ workshop"
+                aria-label="Læs om Kreativ workshop">→</button>
+            </div>
+          </article>
+          <article class="event-card" data-category="fællesskab">
+            <div class="event-photo image-slot" style="--photo:url('images/arrengementer.jpg')"><span
+                class="image-placeholder">event-faellesskab.jpg</span><span class="date-pill">05
+                <small>DEC</small></span></div>
+            <div class="event-body">
+              <div>
+                <h3>Fællesskabsaften</h3>
+                <p>Kl. 18.00 – 21.00</p>
+              </div><button class="round-arrow" data-event="Fællesskabsaften"
+                aria-label="Læs om Fællesskabsaften">→</button>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">Eksempelarrangementer til det fiktive skoleprojekt – datoer og tider er
+          demonstrationsindhold.</p>
+      </div>
+    </section>
+
+    <section class="section" id="lokaler">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">SKAB NOGET SAMMEN</span>
+            <h2>Lokaler & Booking</h2>
+            <div class="heading-rule"></div>
+          </div>
+          <p>Book et lokale til musik, workshop, møde eller kreativt projekt.</p>
+        </div>
+        <div class="room-grid">
+          <article class="room-card">
+            <div class="room-photo image-slot" style="--photo:url('images/lokale.png')"><span
+                class="image-placeholder">musiklokale.jpg</span></div>
+            <div class="room-content">
+              <h3>Musiklokale</h3>
+              <p>Et inspirerende rum til musik og lyd.</p><button class="text-link" data-room="Musiklokale">Se lokale &
+                book →</button>
+            </div>
+          </article>
+          <article class="room-card">
+            <div class="room-photo image-slot" style="--photo:url('images/sharebox1.jpg')"><span
+                class="image-placeholder">vaerksted.jpg</span></div>
+            <div class="room-content">
+              <h3>Kreativt værksted</h3>
+              <p>Plads til kunst, design og nye idéer.</p><button class="text-link" data-room="Kreativt værksted">Se
+                lokale & book →</button>
+            </div>
+          </article>
+          <article class="room-card">
+            <div class="room-photo image-slot" style="--photo:url('images/arrengementer.jpg')"><span
+                class="image-placeholder">moedelokale.jpg</span></div>
+            <div class="room-content">
+              <h3>Mødelokale</h3>
+              <p>Til samarbejde og fælles projekter.</p><button class="text-link" data-room="Mødelokale">Se lokale &
+                book →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section share-section" id="sharebox">
+      <div class="container share-layout">
+        <div class="share-copy"><span class="eyebrow">DEL MERE, SPILD MINDRE</span>
+          <h2>ShareBox</h2>
+          <p>Vores fiktive digitale deleordning gør det nemt at låne værktøj og udstyr i stedet for at købe nyt.</p>
+          <div class="share-steps">
+            <div><span>01</span>
+              <h3>Scan QR</h3>
+              <p>Åbn ShareBox med appen.</p>
+            </div>
+            <div><span>02</span>
+              <h3>Lån udstyr</h3>
+              <p>Vælg det, du har brug for.</p>
+            </div>
+            <div><span>03</span>
+              <h3>Aflever igen</h3>
+              <p>Registrér, når du er færdig.</p>
+            </div>
+          </div><button class="btn btn-copper" id="shareDemo">Prøv ShareBox-demo →</button>
+        </div>
+        <div class="share-image image-slot" style="--photo:url('images/sharebox.png')"><span
+            class="image-placeholder">Billede: sharebox-stor.jpg</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="legeplads">
+      <div class="container split-section">
+        <div class="split-photo image-slot" style="--photo:url('images/legepladsen.png')"><span
+            class="image-placeholder">Billede: legeplads-stor.jpg</span></div>
+        <div><span class="eyebrow">MUSIK I BEVÆGELSE</span>
+          <h2>Legepladsen</h2>
+          <p>Et fantasifuldt område med musikalske legeredskaber, trommegynger, klatreområder og grønne løsninger. Her
+            mødes leg, kreativitet og fællesskab.</p><a href="#kontakt" class="btn btn-dark">Læs mere om projektet →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="om-os">
+      <div class="container about-layout">
+        <div><span class="eyebrow light">VORES IDÉ</span>
+          <h2>Et kreativt fællesskab i hjertet af Musicon</h2>
+        </div>
+        <div>
+          <p>Musicon Collective er et <strong>fiktivt skoleprojekt</strong> om et bæredygtigt mødested i Roskilde.
+            Konceptet samler musiklegeplads, fælleslokaler, terrasse, aktiviteter og en ShareBox til deling af værktøj.
+          </p>
+          <p>Vores værdier er fællesskab, kreativitet, tilgængelighed og omtanke for ressourcerne.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt">
+      <div class="container"><span class="eyebrow">KONTAKT</span>
+        <h2>Har du en idé?</h2>
+        <p>Send en besked i vores demoformular. Der bliver ikke sendt eller gemt personlige oplysninger.</p>
+        <form id="contactForm" class="contact-form"><label>Navn<input name="name" required
+              placeholder="Dit navn" /></label><label>E-mail<input type="email" name="email" required
+              placeholder="din@email.dk" /></label><label class="wide">Besked<textarea name="message" rows="4" required
+              placeholder="Skriv din besked..."></textarea></label><button class="btn btn-copper" type="submit">Vis
+            demo-bekræftelse →</button></form>
+        <p id="contactFeedback" class="feedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Musicon Collective</strong>
+        <p>Leg · Skab · Del · Mød</p>
+      </div>
+      <div>
+        <p>Fiktivt skoleprojekt · Musicon, Roskilde</p>
+        <p>© <span id="year"></span> Musicon Collective</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="bookingDialog" class="dialog">
+    <form method="dialog" class="dialog-content" id="bookingForm"><button type="button" class="dialog-close" data-close
+        aria-label="Luk">×</button><span class="eyebrow">DEMO-BOOKING</span>
+      <h2>Book et lokale</h2>
+      <p>Dette er en interaktiv prototype. Ingen reservation bliver sendt eller gemt.</p><label>Vælg lokale<select
+          id="roomSelect" required>
+          <option value="">Vælg lokale</option>
+          <option>Musiklokale</option>
+          <option>Kreativt værksted</option>
+          <option>Mødelokale</option>
+        </select></label><label>Dato<input type="date" id="bookingDate" required /></label><label>Tidspunkt<select
+          required>
+          <option value="">Vælg tidspunkt</option>
+          <option>09.00 – 11.00</option>
+          <option>12.00 – 14.00</option>
+          <option>15.00 – 17.00</option>
+          <option>18.00 – 20.00</option>
+        </select></label><button class="btn btn-copper" type="submit">Vis bookingbekræftelse</button>
+      <p id="bookingFeedback" class="feedback" role="status"></p>
+    </form>
+  </dialog>
+  <dialog id="infoDialog" class="dialog">
+    <div class="dialog-content"><button type="button" class="dialog-close" data-close aria-label="Luk">×</button><span
+        class="eyebrow">MUSICON COLLECTIVE</span>
+      <h2 id="infoTitle"></h2>
+      <p id="infoText"></p><button type="button" class="btn btn-dark" data-close>Luk</button>
+    </div>
+  </dialog>
+</body>
+</html>
