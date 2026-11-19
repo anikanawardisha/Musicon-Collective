@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "musicon-app-v1";
+const CACHE_NAME = "musicon-app-v2";
 
 const FILES_TO_CACHE = [
     "./",
@@ -10,8 +10,9 @@ const FILES_TO_CACHE = [
     "./images/lokale.png",
     "./images/sharebox.png",
     "./images/arrengementer.jpg",
-    "./images/icon-192.png",
-    "./images/icon-512.png"
+    "./manifest.json",
+    "./icons/icon-192x192.png",
+    "./icons/icon-512x512.png"
 ];
 
 // Install service worker
