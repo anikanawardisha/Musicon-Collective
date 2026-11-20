@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1F2E24" />
+  <meta name="description" content="Musicon Collective – leg, skab, del og mød i et kreativt fællesskab." />
+  <title>Musicon Collective | Leg · Skab · Del · Mød</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="manifest" href="manifest.json"> <!----->
+  <link rel="stylesheet" href="3d.css">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png">
+<script>
+            // Check that service workers are registered
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./service-worker.js');
+                });
+            }
+    </script>
+
+     <script src="app.js" defer></script>
+  
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hjem" class="brand" aria-label="Musicon Collective, gå til forsiden">
+        <svg class="brand-mark" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+          <rect x="2" y="21" width="6" height="14" rx="3" />
+          <rect x="11" y="14" width="6" height="28" rx="3" />
+          <rect x="20" y="5" width="6" height="46" rx="3" />
+          <rect x="29" y="16" width="6" height="24" rx="3" />
+          <rect x="38" y="11" width="6" height="34" rx="3" />
+          <rect x="47" y="22" width="6" height="12" rx="3" />
+        </svg>
+        <span>Musicon<br />Collective</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false"
+        aria-label="Åbn menu">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Hovednavigation">
+        <a class="nav-link active" href="#hjem">Hjem</a>
+        <a class="nav-link" href="#aktiviteter">Aktiviteter</a>
+        <a class="nav-link" href="#lokaler">Lokaler & Booking</a>
+        <a class="nav-link" href="#sharebox">ShareBox</a>
+        <a class="nav-link" href="#om-os">Om os</a>
+        <a class="nav-link" href="#kontakt">Kontakt</a>
+        <a class="nav-link" href="3d-view.html">Udforsk i 3D</a>
+        <button class="btn btn-copper nav-book" data-open-booking>Book nu <span aria-hidden="true">↗</span></button>
+      </nav>
+    </div>
+  </header>
+
+    <main class="model-page-main">
+
+        <section class="model-intro">
+
+            <span class="eyebrow">
+                FÆLLESSKAB · ARKITEKTUR · BÆREDYGTIGHED
+            </span>
+
+            <h1>Oplev Musicon Collective i 3D</h1>
+
+            <p>
+                Udforsk vores vision for et kreativt og bæredygtigt
+                fællesskab. Drej modellen, oplev bygningen fra
+                forskellige vinkler, og forestil dig et sted, hvor
+                mennesker kan mødes, skabe, dele og inspirere hinanden.
+            </p>
+
+            <span class="model-tip">
+                ↻ Drej modellen, og udforsk bygningen fra alle vinkler
+            </span>
+
+        </section>
+
+        <section class="model-view-section">
+
+            <div class="model-view-box">
+
+                <model-viewer
+                    src="media/container i 3d (1).glb"
+                    alt="3D-model af Musicon Collective"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="15deg"
+                    shadow-intensity="1.5"
+                    exposure="1"
+                    environment-image="neutral"
+                    camera-orbit="0deg 75deg 8m"
+                    field-of-view="30deg">
+
+                </model-viewer>
+
+                <div class="model-caption">
+                    MUSICON COLLECTIVE · VORES FREMTIDIGE FÆLLESSKAB
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="model-back">
+            <a href="index.html">← Tilbage til forsiden</a>
+        </div>
+
+    </main>
+</body>
+</html>

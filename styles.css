@@ -797,7 +797,14 @@ textarea {
     font-size: .76rem;
     padding: 18px 10px 10px
 }
-
+/*h3{
+    
+    font: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border: 10px;
+    
+}*/
 .event-grid,
 .room-grid {
     grid-template-columns: 1fr
@@ -837,6 +844,38 @@ textarea {
 }
 
 
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .model-page-main {
+        padding: 50px 15px;
+    }
+
+    .model-view-box {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .model-view-box model-viewer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .model-view-box model-viewer {
+        height: 320px;
+    }
+
+    .model-caption {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+}
+```
 /* =========================
    TABLET AND MOBILE DESIGN
 ========================= */
@@ -883,136 +922,7 @@ textarea {
 
 }
 
-/* =========================
-   MOBILE PHONE
-========================= */
 
-@media (max-width: 600px) {
-
-    .container {
-        width: calc(100% - 32px);
-    }
-
-    .header-inner {
-        min-height: 72px;
-    }
-
-    .brand {
-        font-size: 1.1rem;
-    }
-
-    .brand-mark {
-        width: 40px;
-        height: 40px;
-    }
-
-    .hero {
-        min-height: 530px;
-    }
-
-    .hero-content {
-        padding: 65px 0 100px;
-    }
-
-    .hero h1 {
-        font-size: 3.4rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .feature-icon {
-        font-size: 2.2rem;
-    }
-
-    .section {
-        padding: 55px 0;
-    }
-
-    .section-heading {
-        display: block;
-    }
-
-    .section-heading > p {
-        margin-top: 14px;
-    }
-
-    .experience-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .experience-card {
-        height: 190px;
-    }
-
-    .card-overlay {
-        font-size: .76rem;
-        padding: 18px 10px 10px;
-    }
-
-    .event-grid,
-    .room-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .event-photo,
-    .room-photo {
-        height: 220px;
-    }
-
-    .share-layout,
-    .split-section,
-    .about-layout {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .share-image,
-    .split-photo {
-        height: 280px;
-    }
-
-    .share-steps {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-form {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form button {
-        justify-self: stretch;
-    }
-
-    .footer-inner {
-        display: block;
-    }
-
-    .footer-inner > div + div {
-        margin-top: 20px;
-    }
-
-    .dialog-content {
-        padding: 28px 20px;
-    }
-
-}
-
-/* =========================
-   ACCESSIBILITY
-========================= */
 
 @media (prefers-reduced-motion: reduce) {
 
