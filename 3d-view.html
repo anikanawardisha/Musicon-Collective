@@ -13,7 +13,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-  <link rel="manifest" href="manifest.json"> <!----->
+  <link rel="manifest" href="manifest.json"> 
   <link rel="stylesheet" href="3d.css">
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.png">
@@ -102,15 +102,34 @@
                     field-of-view="30deg">
 
                 </model-viewer>
+                <section class="model-view-section">
 
-                <div class="model-caption">
-                    MUSICON COLLECTIVE · VORES FREMTIDIGE FÆLLESSKAB
-                </div>
+            <div class="model-view-box">
+
+                <model-viewer
+                    src="media/SHAREBOX (1).glb"
+                    alt="3D-model af Musicon Collective"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="15deg"
+                    shadow-intensity="1.5"
+                    exposure="1"
+                    environment-image="neutral"
+                    camera-orbit="0deg 75deg 8m"
+                    field-of-view="30deg">
+
+                </model-viewer>
 
             </div>
 
         </section>
 
+
+                <div class="model-caption">
+                    MUSICON COLLECTIVE · VORES FREMTIDIGE FÆLLESSKAB
+                </div>
+
+                
         <div class="model-back">
             <a href="index.html">← Tilbage til forsiden</a>
         </div>
@@ -118,3 +137,4 @@
     </main>
 </body>
 </html>
+
